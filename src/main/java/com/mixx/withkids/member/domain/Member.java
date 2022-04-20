@@ -10,6 +10,8 @@ public class Member {
 	String passwd;
 	String name;
 	Category category;
+    Area area;
+    Place place;
 
 	public String getPasswd() {
 		return passwd;
