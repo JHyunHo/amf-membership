@@ -3,6 +3,8 @@ package com.mixx.withkids.member;
 import com.mixx.withkids.member.domain.Category;
 import com.mixx.withkids.member.domain.Member;
 import com.mixx.withkids.member.domain.Repository;
+import com.mixx.withkids.member.domain.Area;
+import com.mixx.withkids.member.domain.Place;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
