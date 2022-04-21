@@ -1,6 +1,8 @@
 package com.mixx.withkids.member.domain;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Member {
@@ -56,5 +58,6 @@ public class Member {
 
 	@Override
 	public String toString() {
-	 	return "id = " + id + " & passwd = " + passwd + " & name = " + name + " & category = " + category;
+	 	return "id = " + id + " & passwd = " + passwd + " & name = " + name + " & category = " + category + " & area = " + area + " & place = " + place;
 	}
+}
