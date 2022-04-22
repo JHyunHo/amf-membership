@@ -10,7 +10,7 @@ import com.mixx.withkids.member.MemberApplication;
 public class Member {
 
 	@Id @GeneratedValue
-	Long id;
+	String userid;
 	String passwd;
 	String name;
 	Category category;
@@ -67,6 +67,6 @@ public class Member {
 
 	@Override
 	public String toString() {
-	 	return "id = " + id + " & passwd = " + passwd + " & name = " + name + " & category = " + category + " & area = " + area + " & place = " + place;
+	 	return "id = " + userid + " & passwd = " + passwd + " & name = " + name + " & category = " + category + " & area = " + area + " & place = " + place;
 	}
 }
