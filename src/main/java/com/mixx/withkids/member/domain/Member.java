@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import com.mixx.withkids.member.MemberApplication;
+
 @Entity
 public class Member {
 
@@ -55,6 +57,13 @@ public class Member {
 	public void setPlace(Place place) {
 		this.place = place;
 	}
+
+	public void save(){
+		Repository repository = MemberApplication.getApplicationContext().getBean(Repository.class);
+		repository.save(this);
+	}
+
+
 
 	@Override
 	public String toString() {
