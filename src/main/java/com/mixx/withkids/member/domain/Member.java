@@ -1,7 +1,6 @@
 package com.mixx.withkids.member.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import com.mixx.withkids.member.MemberApplication;
@@ -9,13 +8,23 @@ import com.mixx.withkids.member.MemberApplication;
 @Entity
 public class Member {
 
-	@Id @GeneratedValue
+	@Id 
 	String userid;
 	String passwd;
 	String name;
 	Category category;
     Area area;
     Place place;
+
+
+
+	public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
 
 	public String getPasswd() {
 		return passwd;
