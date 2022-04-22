@@ -1,6 +1,8 @@
 package com.mixx.withkids.member.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.mixx.withkids.member.MemberApplication;
@@ -8,7 +10,7 @@ import com.mixx.withkids.member.MemberApplication;
 @Entity
 public class Member {
 
-	@Id 
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	String userid;
 	String passwd;
 	String name;
